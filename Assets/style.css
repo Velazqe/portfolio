@@ -7,6 +7,9 @@
 .body-container {
     display: flex;
     flex-direction: column;
+    max-width: 88%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -28,18 +31,19 @@
   .header-name {
     background-color: var(--textblue);
     color: var(--bggray);
+    width: fit-content;
+    padding: 0 10px 0 10px;
   }
   
   h1 {
-    flex: 1;
     font-size:xx-large;
     
     
 
   }
   
-  nav {
-    flex: 1;
+  .navbar {
+    flex: 50%;
   }
 
   .ul-container {
@@ -105,4 +109,101 @@
     display: flex;
     flex: 2;
     flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
   }
+
+  #div-aboutme, #div-work, #div-contact {
+   
+    display: flex;
+    
+
+  }
+
+  #div-aboutme {
+    /* Flex: 1; */
+  }
+
+  #div-work {
+    flex-grow: 3;
+  }
+
+  #div-contact {
+    /* Flex: 1; */
+  }
+
+ .myinfo {
+  flex: 10%;
+  border-right: 10PX solid lightblue;
+  text-align: right;
+  padding: 15px;
+  font-size: xx-large;
+  min-width: 160px;
+  }
+
+ .Lorem {
+  display: flex;
+  flex: 90%;
+  border: 1px solid purple;
+  flex-wrap: wrap;
+  padding: 15px;
+ }
+
+ /* h2.work {
+  display: flex;
+  flex: 10%;
+  border: 1px solid red;
+  justify-content: end;
+  font-size: xx-large;
+  padding: 15px;
+}
+
+p.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 90%;
+  border: 1px solid purple;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+} */
+
+.work {
+  flex: 10%;
+  border-right: 10PX solid lightblue;
+  text-align: right;
+  padding: 15px;
+  font-size: xx-large;
+  background-color: brown;
+  min-width: 160px;
+}
+
+.cards {
+flex: 90%;
+background-color: blue;
+}
+
+
+
+
+
+
+ h2.contact {
+  display: flex;
+  flex: 10%;
+  border-right: 10PX solid lightblue;
+  justify-content: end;
+  font-size: xx-large;
+  padding: 15px;
+  min-width: 160px;
+}
+
+ul.information {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 90%;
+  border: 1px solid purple;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+}
